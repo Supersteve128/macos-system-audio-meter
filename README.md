@@ -55,6 +55,6 @@ This app therefore measures `dBFS` instead of `dBSPL`, using routed system audio
 - The meter currently looks for a device named `BlackHole 2ch` by default.
 - If your loopback device uses a different name, update `start(deviceName:)` in `audiodb/SystemAudioMeter.swift`.
 
-## Why It’s Resume-Worthy
+## Technical Takeaways
 
-This project demonstrates desktop app development, low-level Core Audio integration, real-time signal metering, and performance-aware UI updates in Swift.
+This project explores low-level macOS audio capture with Core Audio, real-time RMS and peak metering in `dBFS`, and the practical limitation that software-only system audio capture cannot produce calibrated `dBSPL` without hardware-specific measurement and calibration.
