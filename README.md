@@ -1,8 +1,10 @@
-# System Audio Meter for macOS
+# Real-Time System Audio Level Meter for macOS
 
 Small macOS utility built with SwiftUI, Core Audio, and Accelerate to measure live system audio levels in dBFS.
 
 This app listens to a routed system-audio device, computes real-time RMS and peak values, smooths the meter response, and renders a minimal desktop UI for monitoring output volume.
+
+The current implementation expects a loopback device named `BlackHole 2ch`, so `BlackHole` is required unless you change the device name in code.
 
 ## Features
 
@@ -30,7 +32,7 @@ This app listens to a routed system-audio device, computes real-time RMS and pea
 
 - macOS 15.2+
 - Xcode 16+
-- A loopback audio device such as `BlackHole 2ch`
+- `BlackHole 2ch` or another loopback audio device
 
 ## Running Locally
 
