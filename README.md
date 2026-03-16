@@ -6,6 +6,14 @@ This app listens to a routed system-audio device, computes real-time RMS and pea
 
 The current implementation expects a loopback device named `BlackHole 2ch`, so `BlackHole` is required unless you change the device name in code.
 
+## Motivation
+
+This project started from a simple question: can macOS report actual playback loudness in `dBSPL` for headphones or speakers?
+
+In practice, macOS exposes digital signal levels, not calibrated acoustic loudness. Because `dBSPL` depends on the playback hardware, gain staging, and physical calibration, software alone cannot derive a trustworthy SPL value from system audio samples.
+
+This app therefore measures `dBFS` instead of `dBSPL`, using routed system audio as a practical proxy for relative playback level.
+
 ## Features
 
 - Real-time stereo audio capture through Core Audio AUHAL
