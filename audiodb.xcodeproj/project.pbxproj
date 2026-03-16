@@ -29,9 +29,22 @@
 		43BA250D2F413C5E004680D1 /* audiodbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audiodbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		43BA25212F413E69004680D1 /* Exceptions for "audiodb" folder in "audiodb" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 43BA24F12F413C5C004680D1 /* audiodb */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		43BA24F42F413C5C004680D1 /* audiodb */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				43BA25212F413E69004680D1 /* Exceptions for "audiodb" folder in "audiodb" target */,
+			);
 			path = audiodb;
 			sourceTree = "<group>";
 		};
@@ -399,7 +412,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"audiodb/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = audiodb/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app measures audio levels from the selected input device (e.g., BlackHole) to display a dB meter.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -424,7 +440,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"audiodb/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = audiodb/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app measures audio levels from the selected input device (e.g., BlackHole) to display a dB meter.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
