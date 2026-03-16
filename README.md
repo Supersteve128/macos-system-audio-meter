@@ -6,6 +6,10 @@ This app listens to a routed system-audio device, computes real-time RMS and pea
 
 The current implementation expects a loopback device named `BlackHole 2ch`, so `BlackHole` is required unless you change the device name in code.
 
+## Screenshot
+
+![Real-Time System Audio Meter UI](docs/app-screenshot.png)
+
 ## Motivation
 
 This project started from a simple question: can macOS report actual playback loudness in `dBSPL` for headphones or speakers?
